@@ -1,0 +1,180 @@
+            .item1{grid-area:header;}
+            .item2{grid-area:menu;}
+            .item3{grid-area:main;}
+            .item4{grid-area:right;}
+            .item5{grid-area:facts;}
+            .item6{grid-area:footer;}
+
+            .grid-container{
+                display: grid;
+                grid-template-areas: 'header header header header header header'
+                                      'menu main main main right right'
+                                      'menu main main main facts facts'
+                                      'menu footer footer footer footer footer';
+                grid-gap: 10px;
+                background-color:white;
+                padding: 10px;
+                
+            }
+
+            .grid-container > div{
+                background-color:cadetblue;
+                text-align: center;
+                font-size: 50px;
+                font-weight:bolder;
+                padding: 20px;
+                color: black;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            
+            body{
+                background-color: cadetblue;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 180px;
+                border-bottom: 5px;
+                background-color: #0a4275;
+                color: white;
+                padding:50px;
+                margin:5px;
+            }
+
+            header{
+                display: flex;
+                justify-content: space-between;
+                font-size: 70px;
+                font-weight: bolder;
+                border-bottom: 5px solid #1976d2;
+
+            }
+
+            nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            }
+
+            .logo{
+                  display: flex;
+                  align-items: center;
+                  max-width: 500px;
+                  justify-content: space-between;
+                  height: 300px;
+                  align-items:end;
+                  float: right;
+                  margin-left: 100px;
+            }
+
+            .menu1{
+                font-size: smaller;
+                font-weight: lighter;
+            }
+
+            .service1{
+                font-weight: lighter;
+                font-size: smaller;
+                text-align:left
+            }
+
+            .footer{
+                background-color: #0a4275;
+                color: white;
+                padding:20px;
+                text-align: center;
+                font-size: smaller;
+                font-size:smaller;
+            }
+
+            .footer-links a{
+                color:#0a4275;
+                margin: 0 10px;
+                text-decoration: none;
+                padding-top: 300px;
+            }
+
+            .footer-links a:hover{
+                text-decoration: underline;
+            }
+
+            .facts1{font-size: smaller;
+                    font-weight: lighter;
+                }
+
+            /* Default styles (desktop/laptop) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+  header, footer {
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  width: 750px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border:#0a4275;
+  background-color: #0a4275;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  width: 300px;
+  align-items: center;
+}
+
+.search-bar button:hover {
+  background-color: #06315a;
+}
+
+  .image{
+    height:650px;
+  }      
